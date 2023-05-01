@@ -5,6 +5,8 @@
 const num1s = Math.ceil(Math.random() * 10)
 const num2s = Math.ceil(Math.random() * 10)
 
+const fimJogo = false ;
+
 //pega o que está no id "questaoSoma" e salva na variável "questaoSomaE1".
 const questaoSomaE1 = document.getElementById("questaoSoma");
 
@@ -72,3 +74,72 @@ function updateLocalStorageSoma() {
 
 
 
+            // fazer a verificação para mostrar o placar de vencedor
+            if(pontoS == 10){
+                gameOver();
+                localStorage.removeItem('pontoS');
+                fimJogo = false; 
+                formSomaE1 = "";
+            } else if (pontoS == -10 ) {
+                gameMenos();
+                localStorage.removeItem('pontoS');
+                fimJogo = false; 
+                formSomaE1 = "";
+            }
+
+
+            function gameOver() {
+
+                var gameOverAlertElement = "<b>FIM DE JOGO</b><br><br> PARABÉNS !!!Você fez 10 pontos !!  <br><br> <input  id='reniciar' type='button' value='Reiniciar' onClick='window.location.reload(true)'> ";
+
+                var div = document.createElement("div");
+                div.className = "alert";
+                div.innerHTML = gameOverAlertElement;
+                document.getElementsByTagName("body")[0].appendChild(div);
+                window.fimJogo = true;
+                moves = 0;
+
+            }
+
+
+            function gameMenos() {
+
+
+                var gameOverAlertElement = "<b>FIM DE JOGO</b><br><br> Perdeu !!! <br> Você fez -10 pontos !! <br><br> <input id='reniciar' type='button' value='Reiniciar' onClick='window.location.reload(true)'>";
+
+                var div = document.createElement("div");
+                div.className = "alert";
+                div.innerHTML = gameOverAlertElement;
+                document.getElementsByTagName("body")[0].appendChild(div);
+                window.fimJogo = true;
+                moves = 0;
+
+            }
+
+
+
+
+
+            function resetGame() {
+
+            }
+
+
+
+
+        // animaçao
+        var app = document.getElementById('app');
+
+        var typewriter = new Typewriter(app, {
+            loop: true
+        });
+
+        typewriter.typeString('Faça 10 pontos')
+            .pauseFor(2500)
+            .deleteAll()
+            .typeString(' para ganhar ou ')
+            .pauseFor(2500)
+            .deleteChars(15)
+            .typeString(' para perder...')
+            .start();
+      

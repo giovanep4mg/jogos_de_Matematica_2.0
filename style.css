@@ -21,9 +21,8 @@ div {
     padding-left: 40px;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(00, 00, 00, 0.3);
-    border-radius: 30px;
+    border-radius: 20px;
     margin: 10px;
-    align-items: center;
 }
 
 /* titulo e sub titulo jogo */
@@ -90,6 +89,9 @@ div {
     font-family: cursive;
 }
 
+a{
+    text-decoration: none;
+}
 
 
 /* cabecario container titulo principal */
@@ -120,14 +122,15 @@ div {
 /* cabecario  container subtitulo */
 .sub-title-jogo{
     text-align: center;
+    display: contents;
 }
 
 
 /* cabecario subtitulo principal texto jogo */
 .subTitulo {
-    background-color: rgba(24, 189, 6, 0.306);
+    background-color: rgba(24, 189, 6, 0.166);
     font-family: 'Courier New', Courier, monospace;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 39px;
     text-align: center;
     align-items: center;
@@ -177,8 +180,8 @@ div {
 
 /* copyright */
 .copy{
-    background-color: rgba(222, 184, 135, 0.772);
-    font-size: 34px;
+    color: aliceblue;
+    font-size: 44px;
     margin: 0.1px;
     margin: 0px;
     padding: 20px;
@@ -192,6 +195,8 @@ div {
     padding: 10px;
 
     display: inline-flexbox;
+
+    font-size: 30px;
 }
 
 
@@ -209,4 +214,59 @@ div {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.alert {
+    height: 75px;
+    width: 125px;
+    display: inline-block;
+    background: ghostwhite;
+    position: fixed;
+    z-index: 10;
+    margin-top: 95px;
+    margin-left: 8px;
+
+    border: 5px solid yellow;
+
+    color: rgb(52, 44, 44);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+
+
+    border-radius: 20px;
+    box-shadow: 0 0 75px 2px dimgray;
+    animation: larger 0.5s;
+    animation-fill-mode: forwards;
+    box-sizing: content-box;
+    padding: 80px;
+    padding-top: inherit;
+    bottom: 40px;
+    top: 0;
+}
+
+/*Animação*/
+#app {
+    font-family: sans-serif;
+    font-size: 70px;
+    color:#29de37;
+    text-align: center;
+    text-decoration: black;
+    margin-top:20px;
+}
+
+#reniciar{
+    background-color: #549347;
+    color: white;
+    border: none;
+    display: block;
+    width: 200%;
+    padding: 20px 10px 25px 10px;
+    font-size: 34px;
+    font-family: cursive;
+    margin: 60px -10px 0px -69px;
+    border-radius: 22px;
+    box-shadow: 0 10px 4px rgba(00, 00, 00, 0.3);
+    cursor: pointer;
+}
+
+
 

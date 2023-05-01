@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogos de Matemática = Subtração </title>
+
     <!--JQuery--->
     <script src="jquery-3.6.3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
+    
     <!---CSS da multiplicação-->
     <link rel="stylesheet" href="styleSub.css" />
     <!---CSS geral-->
     <link rel="stylesheet" href="style.css">
+    <!--Font Iconi-->
+    <script src="https://kit.fontawesome.com/20dee05e38.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <main>
@@ -20,15 +26,16 @@
         </header>
       </div>
       <div class="sub-title-jogo">
-        <h2 class="subTitulo" id="subTitulo">
-          Se você acertar vai adicionar 1 ponto.<br>
-          Se você errou vai diminuir seu ponto -1.<br>
-          <br>
-          </h2>
+        <h1 class="subTitulo" id="subTitulo">
+          <div class="texto-apresentacao" id="app"></div><br>
+        </h1>
       </div>
     <div class="multiplicacao" id="multiplicacao">
       <form class="form" id="formSub">
-        <h2 class="form-title"> Subtração </h2>
+        <h2 class="form-title">
+           Subtração
+           <i class="fa-solid fa-minus"></i>
+        </h2>
         <h4 class="ponto" id="pontoSub">Pontos:0</h4>
         <h1 class="form-subtitle" id="questaoSub">Quanto é 1 menos (-) 1 ?</h1>
         <input
@@ -46,19 +53,41 @@
     <br>
     <div class="linkjogos-baixo">
       <div class="button">
-        <a href="./index.html"><button type="button" class="btnMenu">Menu</button></a>
+        <a href="./index.html">
+          <button type="button" class="btnMenu"> 
+            <i class="fa-solid fa-bars"></i>
+            Menu
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </a>
       </div>
       <div class="button">
-        <a href="./multiplicacao1.html"><button type="button" class="btnMenu">Multiplicação</button></a>
+        <a href="./multiplicacao1.html">
+          <button type="button" class="btn">Multiplicação
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </a>
       </div>
       <div class="button">
-        <a href="./adição.html"><button type="button" class="btnMenu">Adição</button></a>
+        <a href="./adição.html">
+          <button type="button" class="btn"> Adição 
+            <i class="fa-solid fa-plus"></i> 
+          </button>
+        </a>
       </div>
       <div class="button">
-        <a href="./subtração.html"><button type="button" class="btnMenu">Subtrair</button></a>
+        <a href="./subtração.html">
+          <button type="button" class="btn">Subtrair
+            <i class="fa-solid fa-minus"></i>
+          </button>
+        </a>
       </div>
       <div class="button">
-        <a href="./divisao.html"><button type="button" class="btnMenu">Dividir</button></a>
+        <a href="./divisao.html">
+          <button type="button" class="btn">Dividir
+            <i class="fa-solid fa-divide"></i>
+          </button>
+        </a>
       </div>
     </div>
     <br>

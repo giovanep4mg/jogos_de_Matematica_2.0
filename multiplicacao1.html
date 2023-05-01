@@ -7,10 +7,14 @@
     <title>Jogos de Matemática</title>
     <!--JQuery--->
     <script src="jquery-3.6.3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://safi.me.uk/typewriterjs/js/typewriter.js"></script>
     <!---CSS da multiplicação-->
     <link rel="stylesheet" href="styleMult.css" />
     <!---CSS geral-->
     <link rel="stylesheet" href="style.css">
+    <!--Font Iconi-->
+    <script src="https://kit.fontawesome.com/20dee05e38.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <main>
@@ -20,17 +24,19 @@
         </header>
       </div>
       <div class="sub-title-jogo">
-        <h2 class="subTitulo" id="subTitulo">
-          Se você acertar vai adicionar 1 ponto.<br>
-          Se você errou vai diminuir seu ponto -1.<br>
-          <br>
-          </h2>
+        <h1 class="subTitulo" id="subTitulo">
+          <div class="texto-apresentacao" id="app"></div>
+        </h1>
       </div>
     <div class="multiplicacao" id="multiplicacao">
       <form class="form" id="form">
-        <h2>Multiplicação</h2>
+        <h2 class="form-title">
+          Multiplicação
+          <i class="fa-solid fa-xmark"></i>
+        </h2>
         <h4 class="ponto" id="ponto">Pontos:0</h4>
-        <h1 id="questao">Quanto é 1 multiplicado por 1 ?</h1>
+        <h1 id="questao">Quanto é 1 multiplicado por 1 ?
+        </h1>
         <input
           type="number"
           class="input"
@@ -46,19 +52,41 @@
     <br>
     <div class="linkjogos-baixo">
       <div class="button">
-        <a href="./index.html"><button type="button" class="btnMenu">Menu</button></a>
+        <a href="./index.html">
+          <button type="button" class="btnMenu"> 
+            <i class="fa-solid fa-bars"></i>
+            Menu
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </a>
       </div>
       <div class="button">
-        <a href="./multiplicacao1.html"><button type="button" class="btnMenu">Multiplicação</button></a>
+        <a href="./multiplicacao1.html">
+          <button type="button" class="btn">Multiplicação
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </a>
       </div>
       <div class="button">
-        <a href="./adição.html"><button type="button" class="btnMenu">Adição</button></a>
+        <a href="./adição.html">
+          <button type="button" class="btn"> Adição 
+            <i class="fa-solid fa-plus"></i> 
+          </button>
+        </a>
       </div>
       <div class="button">
-        <a href="./subtração.html"><button type="button" class="btnMenu">Subtrair</button></a>
+        <a href="./subtração.html">
+          <button type="button" class="btn">Subtrair
+            <i class="fa-solid fa-minus"></i>
+          </button>
+        </a>
       </div>
       <div class="button">
-        <a href="./divisao.html"><button type="button" class="btnMenu">Dividir</button></a>
+        <a href="./divisao.html">
+          <button type="button" class="btn">Dividir
+            <i class="fa-solid fa-divide"></i>
+          </button>
+        </a>
       </div>
     </div>
     <br>
@@ -67,7 +95,7 @@
         &copy;Giovani Teodoro Martins <br>
       </div>
       <br>
-      <h1>LINKS PARA CONTATO:</h1>
+      <h1> CONTATO:</h1>
       <div id="links" class="links">
         <a href="https://github.com/giovanep4mg">github</a><br>
       </div>

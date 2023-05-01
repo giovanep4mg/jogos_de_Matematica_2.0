@@ -12,6 +12,8 @@
     display:flexbox;
 
     box-sizing: content-box;
+
+    text-decoration: none;
 }
 
 
@@ -28,24 +30,26 @@ div {
     height: 100%;
 
     display: flexbox;
+    text-decoration: none;
 }
 
 .title-inicio {
     background-color: brown;
-    padding-left: 36px;
+    padding-left: 70px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
     color: rgba(234, 246, 5, 0.874);
     text-align: justify;
     align-items: flex-start;
+    text-decoration: none;
     
-    text-underline-position: below;
 }
 .subtitle{
     margin: 20px;
     padding: 20px;
     font-size: 40px;
-    color: #dec129
+    color: #dec129;
+    text-decoration: none;
 }
 
 .btnInicio {
@@ -60,9 +64,33 @@ div {
     margin: 0px 0px -35px 0px;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(00, 00, 00, 0.3);
-    cursor: pointer;
+    cursor: pointer; 
+    text-decoration: none;
 }
 
 .btnInicio:hover {
     filter: brightness(0.9);
+    text-decoration: none;
+}
+
+/* copyright */
+.copy{
+    background-color: #294adeae;
+    color: aliceblue;
+    font-size: 44px;
+    margin: 0.1px;
+    margin: 0px;
+    padding: 20px;
+}
+
+/* Links de contato para páginas pessoais*/
+.contato{
+    color: aliceblue;
+
+    margin: 10px;
+    padding: 10px;
+
+    display: inline-flexbox;
+
+    font-size: 30px;
 }

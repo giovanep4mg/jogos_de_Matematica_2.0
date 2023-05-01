@@ -4,9 +4,11 @@
  */
 
 
-const num1Div = Math.ceil(Math.random() * 10)
+const num1Div = Math.ceil(Math.random() * 20)
 const num2Div = 2
-console.log(num1Div)
+
+const fimJogo = false ;
+
 //pega a tag id "questaoDiv", salva na var "questaoDivE1"
 const questaoDivE1 = document.getElementById("questaoDiv");
 
@@ -66,5 +68,74 @@ function updateLocalStorageDiv() {
 
     localStorage.setItem("pontoDiv", JSON.stringify(pontoDiv))
 }
+
+ // fazer a verificação para mostrar o placar de vencedor
+ if(pontoDiv == 10){
+    gameOver();
+    localStorage.removeItem('pontoDiv');
+    fimJogo = false; 
+    formSomaE1 = "";
+} else if (pontoDiv == -10 ) {
+    gameMenos();
+    localStorage.removeItem('pontoDiv');
+    fimJogo = false; 
+    formSomaE1 = "";
+}
+
+
+function gameOver() {
+
+    var gameOverAlertElement = "<b>FIM DE JOGO</b><br><br> PARABÉNS !!!Você fez 10 pontos !!  <br><br> <input  id='reniciar' type='button' value='Reiniciar' onClick='window.location.reload(true)'> ";
+
+    var div = document.createElement("div");
+    div.className = "alert";
+    div.innerHTML = gameOverAlertElement;
+    document.getElementsByTagName("body")[0].appendChild(div);
+    window.fimJogo = true;
+    moves = 0;
+
+}
+
+
+function gameMenos() {
+
+
+    var gameOverAlertElement = "<b>FIM DE JOGO</b><br><br> Perdeu !!! <br> Você fez -10 pontos !! <br><br> <input id='reniciar' type='button' value='Reiniciar' onClick='window.location.reload(true)'>";
+
+    var div = document.createElement("div");
+    div.className = "alert";
+    div.innerHTML = gameOverAlertElement;
+    document.getElementsByTagName("body")[0].appendChild(div);
+    window.fimJogo = true;
+    moves = 0;
+
+}
+
+
+
+
+
+function resetGame() {
+
+}
+
+
+
+
+// animaçao
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+loop: true
+});
+
+typewriter.typeString('Faça 10 pontos')
+.pauseFor(2500)
+.deleteAll()
+.typeString(' para ganhar ou ')
+.pauseFor(2500)
+.deleteChars(15)
+.typeString(' para perder...')
+.start();
 
 
