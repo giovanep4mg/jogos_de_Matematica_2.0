@@ -1,0 +1,42 @@
+.html-multi {
+    background-image: url("./cerebro_numeros.jpg");
+    background-size: contain;
+    background-position: 100%;
+
+    padding-bottom: 20px;
+
+    display: inline;
+}
+
+div {
+    display: inline-block;
+    border-left: 10px;
+}
+
+.multiplicacao {
+    margin: 50px;
+    align-items: center;
+    text-align: center;
+    font-family: cursive;
+
+}
+
+.form-title{
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,212 @@
+
+body{
+    display: flexbox;
+}
+
+main{
+    width: 100%;
+    display: grid;
+    
+}
+
+div {
+    display: block;
+    border-left: 10px;
+}
+
+/* modelo do jogo */
+.form {
+    background-color: white;
+    padding: 25px;
+    padding-left: 40px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(00, 00, 00, 0.3);
+    border-radius: 30px;
+    margin: 10px;
+    align-items: center;
+}
+
+/* titulo e sub titulo jogo */
+.form-title{
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.form-subtitle{
+    text-align: center;
+}
+
+
+
+.button{
+    font-size: 70px;
+    margin: 1.0em;
+    text-align: center;
+    align-items: center;
+}
+
+
+ /* botões do menu jogo */
+.btn {
+    background-color: green;
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: cursive;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(00, 00, 00, 0.3);
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}
+
+.ponto {
+    color: green;
+    text-align: right;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+    border: solid 4px green;
+    color: green;
+}
+
+.input::placeholder {
+    color: lightgray;
+    font-family: cursive;
+}
+
+
+
+/* cabecario container titulo principal */
+.title-principal {
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: rgba(234, 246, 5, 0.874);
+    text-align: justify;
+    align-items: flex-start;
+    
+    text-underline-position: below;
+}
+
+/* cabecario  titulo principal */
+.title{
+    margin: 0;
+    padding: 0;
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* cabecario  container subtitulo */
+.sub-title-jogo{
+    text-align: center;
+}
+
+
+/* cabecario subtitulo principal texto jogo */
+.subTitulo {
+    background-color: rgba(24, 189, 6, 0.306);
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 39px;
+    text-align: center;
+    align-items: center;
+
+}
+/* links tabela voltar */
+.linkjogos-baixo{
+    text-decoration: none;
+    border: 2px solid black;
+    text-align: center;
+    text-decoration-style: none;
+    text-decoration: none;
+   
+}    
+
+.btnMenu {
+    background-color: green;
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: cursive;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(00, 00, 00, 0.3);
+    cursor: inherit;
+    text-align: center;
+    text-decoration-style: none;
+    text-decoration: none;
+}
+
+.btnMenu:hover {
+    filter: brightness(3.9);
+    border-radius: 50%;
+    text-align: center;
+    text-decoration-style: none;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* copyright */
+.copy{
+    background-color: rgba(222, 184, 135, 0.772);
+    font-size: 34px;
+    margin: 0.1px;
+    margin: 0px;
+    padding: 20px;
+}
+
+/* Links de contato para páginas pessoais*/
+.contato{
+    color: aliceblue;
+
+    margin: 10px;
+    padding: 10px;
+
+    display: inline-flexbox;
+}
+
+
+.links{
+    background-color: rgba(216, 247, 16, 0.71);
+    font-size: 35px;
+    margin: 20px;
+    text-align: center;
+}
+.links:hover{
+    background-color: rgba(186, 222, 135, 0.433);
+    font-size: 35px;
+    margin: 1.1px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
